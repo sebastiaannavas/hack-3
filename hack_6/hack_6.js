@@ -16,6 +16,8 @@ let result = {
     role:"admin"
 };
 
+result.name = `${result.name.charAt(0).toUpperCase()}${result.name.slice(1, result.name.length)}`;
+result.role = result.role.toUpperCase();
  
 //export result
 module.exports = result; 
